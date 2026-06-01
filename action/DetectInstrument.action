@@ -1,0 +1,13 @@
+# Goal
+# Empty target_class means use the latest target received on /voice_target_instrument.
+string target_class
+float32 timeout_sec
+---
+bool success
+string message
+geometry_msgs/PoseStamped grasp_pose
+---
+string state
+string target_class
+int32 stable_frames
+int32 stable_frames_required
