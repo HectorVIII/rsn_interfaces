@@ -12,6 +12,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HandPoseWithFeatures.msg"
+  "msg/HandoverEvent.msg"
+  "msg/WorkflowState.msg"
   "action/DetectInstrument.action"
   DEPENDENCIES std_msgs geometry_msgs
 )
