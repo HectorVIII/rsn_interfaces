@@ -1,0 +1,12 @@
+# Goal
+float32 timeout_sec
+---
+# Result
+bool success
+string message
+geometry_msgs/PoseStamped hand_pose
+---
+# Feedback
+string state
+int32 stable_frames
+int32 stable_frames_required
