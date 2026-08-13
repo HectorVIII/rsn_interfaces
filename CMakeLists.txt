@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HandPoseWithFeatures.msg"
   "action/DetectInstrument.action"
   "action/DetectHand.action"
+  "action/RunHandover.action"
   DEPENDENCIES std_msgs geometry_msgs
 )
 

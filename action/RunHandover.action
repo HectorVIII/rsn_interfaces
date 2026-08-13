@@ -1,0 +1,13 @@
+# Goal
+string tool_name          # e.g. "scalpel"; empty => use latest /voice_target_instrument
+string source_slot        # optional override of instrument_grasp_table entry
+float32 timeout_sec       # 0 => use node default
+---
+# Result
+bool success
+string reason             # "released" | "canceled" | "perception_failed" |
+                          # "grasp_failed" | "deliver_timeout" | "aborted"
+---
+# Feedback
+string phase              # "perceive" | "pickup" | "deliver" | "retreat"
+float32 progress          # 0.0 .. 1.0
