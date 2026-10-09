@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HandPoseWithFeatures.msg"
+  "msg/HandState.msg"
   "action/DetectInstrument.action"
   "action/DetectHand.action"
   "action/RunHandover.action"
